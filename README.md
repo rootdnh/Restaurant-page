@@ -1,1 +1,2 @@
-# Restaurant-page
+# Frontend de um site para restaurante
+
