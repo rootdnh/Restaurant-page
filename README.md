@@ -1,4 +1,6 @@
-# Frontend de um site para restaurante
+# Restaurant Page
+
+ Frontend de um site para restaurante
 
 ## Tecnologias
 
