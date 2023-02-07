@@ -87,7 +87,6 @@ const Home = () => {
         <img src={cafeDaManha} height="400px"/>
         <div>
           <h1>We Offer Top Notch</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys standard dummy text ever.</p>
         <img src={aperitivos} height="400px"/>
         </div>
         <img src={drinks} height="400px"/>
