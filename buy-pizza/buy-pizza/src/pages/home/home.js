@@ -5,6 +5,9 @@ import {
   ButtonBanner,
   SectionOne
 } from "./styles";
+import aperitivos from "../../assets/aperitivos.jpg";
+import drinks from "../../assets/drinks.jpg";
+import cafeDaManha from "../../assets/cafe-da-manha.jpg";
 
 const Home = () => {
   return (
@@ -80,8 +83,14 @@ const Home = () => {
       </Banner>
     </Container>
    
-      <SectionOne className="bgDefaultColor" >
-        dsd<h1>ddd</h1>
+      <SectionOne  >
+        <img src={cafeDaManha} height="400px"/>
+        <div>
+          <h1>We Offer Top Notch</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys standard dummy text ever.</p>
+        <img src={aperitivos} height="400px"/>
+        </div>
+        <img src={drinks} height="400px"/>
       </SectionOne>
     
     </div>

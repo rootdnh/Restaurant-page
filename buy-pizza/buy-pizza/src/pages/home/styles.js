@@ -63,6 +63,9 @@ export const ButtonBanner = styled.button`
 export const SectionOne = styled.section`
   height: 100vh;
   color: white;
-  
   z-index: 11;
+  display: flex;
+ 
+  
+
 `;
