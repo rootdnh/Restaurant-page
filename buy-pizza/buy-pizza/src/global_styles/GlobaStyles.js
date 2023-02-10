@@ -10,7 +10,8 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --main-color: #e4c590; 
     --bg-default-color: #0d1819;
-    --bg-second-color: #0e0d0c; 
+    --bg-second-color: #0e0d0c;
+    --bg-third-color: #171819; 
     --white-color: #fff;
     --white-color-opacity: hsla(0,0%,100%,.2);
 

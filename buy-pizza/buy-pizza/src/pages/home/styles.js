@@ -61,11 +61,87 @@ export const ButtonBanner = styled.button`
 
 
 export const SectionOne = styled.section`
-  height: 100vh;
+  
   color: white;
   z-index: 11;
   display: flex;
- 
-  
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  height: 130vh;
 
+
+  img {
+    width: 290px;
+    z-index: 6;
+    
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    padding-bottom: 50px;
+    line-height: 30px;
+}
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-top-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+  }
+
+  .right-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 246px;
+    height: 412px;
+  }
+  .topHeader {
+    color: var(--main-color);
+    padding-bottom: 20px;
+    margin-top: 100px;
+  }
+`;
+
+export const SectionTwo = styled.section`
+  background-color: var(--bg-third-color);
+  color: var(--white-color);
+  justify-content: center;
+  height: 110vh;
+  
+  .boxSecondSection{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .textClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    line-height: 35px;
+    text-align: center;
+
+  }
+  h1 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  img {
+    padding-top: 35px;
+  }
 `;
