@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bg_slider_1 from "../../assets/slider-1.jpg";
+import thirdImage from "../../assets/third-image.jpg";
 
 export const Container = styled.div`
   display: flex;
@@ -120,8 +121,8 @@ export const SectionTwo = styled.section`
   background-color: var(--bg-third-color);
   color: var(--white-color);
   justify-content: center;
-  height: 110vh;
-  
+  padding-bottom: 100px;
+ 
   .boxSecondSection{
     display: flex;
     justify-content: space-around;
@@ -137,7 +138,6 @@ export const SectionTwo = styled.section`
 
   }
   h1 {
-    padding-top: 35px;
     padding-bottom: 35px;
     font-size: 50px;
     font-weight: 100;
@@ -147,4 +147,48 @@ export const SectionTwo = styled.section`
   img {
     padding-top: 35px;
   }
+  .secondImagesClass {
+    position: relative;
+  
+  }
+  #bottom {
+    position: absolute;
+    left: -100px;
+    bottom: 50px;
+  }
+`;
+
+export const SectionThird = styled.section`
+  background: var(--bg-second-color);
+  display: flex;
+  background-image: url(${thirdImage});
+  background-repeat: no-repeat;
+  background-position:  -100px;
+  height: 100vh;
+  position: relative;
+
+  .BgThirdText {
+    position: absolute;
+    background-color: var(--bg-second-color);
+    min-width: 50%;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+   
+  }
+  .inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  p {
+    max-width: 450px;
+    line-height: 30px
+  
+  }
+
 `;
