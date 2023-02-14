@@ -11,6 +11,12 @@ export const Container = styled.div`
   }
  
 `;
+export const TopHeader = styled.span`
+ 
+  color: var(--main-color);
+  padding-bottom: ${(props) => props.bottom};
+  margin-top: ${(props) => props.top};
+`
 
 export const Banner = styled.section`
   display: flex;
@@ -23,12 +29,6 @@ export const Banner = styled.section`
   min-height: 800px;
   width: 100%;
   position: absolute;
-  
-  .topHeader {
-    color: var(--main-color);
-    padding-bottom: 20px;
-    margin-top: 100px;
-  }
 
   h1 {
     font-size: 4em;
@@ -47,7 +47,7 @@ export const Banner = styled.section`
 export const ButtonBanner = styled.button`
   background-color: transparent;
   padding: 20px 45px;
-  margin-top: 50px;
+  margin-top: ${(props) => props.marginTop};
   border: 2px solid var(--main-color);
   color: var(--main-color);
 
@@ -139,6 +139,9 @@ export const SectionTwo = styled.section`
   h1 {
     padding-top: 35px;
     padding-bottom: 35px;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 60px;
   }
 
   img {
