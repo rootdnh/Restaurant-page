@@ -6,7 +6,8 @@ import {
   SectionOne,
   SectionTwo,
   TopHeader,
-  SectionThird
+  SectionThird,
+  SectionFour,
 } from "./styles";
 import aperitivos from "../../assets/aperitivos.jpg";
 import drinks from "../../assets/drinks.jpg";
@@ -15,8 +16,6 @@ import bgSectionOneTop from "../../assets/bg-section-one-top.png";
 import bgSectionOne from "../../assets/bg-section-one.png";
 import imageSectionTwo from "../../assets/image-1.661483ecb5620eb91605.jpg";
 import imageSectionTwoBottom from "../../assets/image-2.1561d09bd2af250694ab.jpg";
-
-
 
 const svgDecalc = (
   <svg width={100} height={50}>
@@ -110,10 +109,14 @@ const Home = () => {
             typesetting industry lorem Ipsum has been the industrys
             <br /> standard dummy text ever.
           </p>
-          <img src={aperitivos} height="400px" alt="imagem sobre alimento"/>
+          <img src={aperitivos} height="400px" alt="imagem sobre alimento" />
         </div>
-        <img src={drinks} height="400px" alt="imagem sobre alimento"/>
-        <img className="right-bg" src={bgSectionOne} alt="imagem sobre alimento"/>
+        <img src={drinks} height="400px" alt="imagem sobre alimento" />
+        <img
+          className="right-bg"
+          src={bgSectionOne}
+          alt="imagem sobre alimento"
+        />
       </SectionOne>
 
       <SectionTwo>
@@ -141,26 +144,40 @@ const Home = () => {
           </div>
 
           <div className="secondImagesClass">
-            <img src={imageSectionTwo} height="580px" alt="imagem sobre restaurante"/>
-            <img id="bottom" src={imageSectionTwoBottom} height="300px" alt="imagem sobre restaurante"/>
+            <img
+              src={imageSectionTwo}
+              height="580px"
+              alt="imagem sobre restaurante"
+            />
+            <img
+              id="bottom"
+              src={imageSectionTwoBottom}
+              height="300px"
+              alt="imagem sobre restaurante"
+            />
           </div>
         </div>
       </SectionTwo>
-  
+
       <SectionThird>
-        
         <div className="BgThirdText">
-           <div className="inside"> 
+          <div className="inside">
             <TopHeader top="0px" bottom="20px">
-                PRATO ESPECIAL
+              PRATO ESPECIAL
             </TopHeader>
             {svgDecalc}
-            <h1 style={{marginBottom: 20 + "px"}} >Lobster Tortellini</h1>
-            <p>Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type.</p>
+            <h1 style={{ marginBottom: 20 + "px" }}>Lobster Tortellini</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printingand typesetting
+              industry lorem Ipsum has been the industrys standard dummy text
+              ever since the when an unknown printer took a galley of type.
+            </p>
             <ButtonBanner marginTop="40px">VEJA TODO MENU</ButtonBanner>
-           </div>
+          </div>
         </div>
       </SectionThird>
+
+      <SectionFour></SectionFour>
     </>
   );
 };
